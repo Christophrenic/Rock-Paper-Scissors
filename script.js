@@ -1,3 +1,8 @@
+let playerScore = 0;
+let computerScore = 0;
+let draw = 0;
+const array = ["rock", "paper", "scissors"];
+game()
 
 function computerPlay() {                                 // Makes choice randomly from the array and returns it.
 return array[Math.floor(Math.random() * array.length)];
@@ -39,9 +44,3 @@ function game() {
         return;
 }
         
-
-let playerScore = 0;
-let computerScore = 0;
-let draw = 0;
-const array = ["rock", "paper", "scissors"];
-game()
