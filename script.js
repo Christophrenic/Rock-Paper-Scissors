@@ -1,23 +1,11 @@
-array = ['rock', 'paper', 'scissors'];
 
-let computerselection;
-let playerselection;
-computerPlay();
-userPlay();
-evaluation(playerselection, computerselection);
-
-function computerPlay(computerselection) {
-computerselection = array[Math.floor(Math.random() * array.length)];
+function computerPlay() {
+return array[Math.floor(Math.random() * array.length)];
 }
 
-function userPlay(playerselection) {
-playerselection = prompt('Choose: Rock, Paper or Scissors', 'Choose it! NOW!!');
+function userPlay() {
+return prompt('Choose: Rock, Paper or Scissors', 'Choose it! NOW!!');
 }
-
-
-
-
-
 
 function evaluation(playerselection, computerselection) {
     if (playerselection.toLowerCase() === computerselection.toLowerCase()) {
@@ -33,3 +21,6 @@ function evaluation(playerselection, computerselection) {
         console.log("You lose");
     }
 }
+
+const array = ['rock', 'paper', 'scissors'];
+evaluation(userPlay(), computerPlay());
