@@ -16,6 +16,7 @@ function evaluation(playerselection, computerselection) {
     if (playerselection.toLowerCase() === computerselection.toLowerCase()) {
         console.log('Draw!');
         draw++;
+        
     } else if (
     (playerselection.toLowerCase() == "rock" && computerselection.toLowerCase() == "scissors") ||      //Evaluates winner and adds to either playerscore or computerscore or draw.
     (playerselection.toLowerCase() == "paper" && computerselection.toLowerCase() == "rock") || 
