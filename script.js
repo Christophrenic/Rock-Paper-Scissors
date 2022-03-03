@@ -10,18 +10,21 @@ const rockBtn = document.querySelector('#rock');
 rockBtn.addEventListener('click', function(e) {
     playerselection = 'rock';
     evaluation(playerselection, computerselection);
+    computerselection = array[Math.floor(Math.random() * array.length)];
 })
 
 const paperBtn = document.querySelector('#paper');
 paperBtn.addEventListener('click', function(e) {
     playerselection = 'paper';
     evaluation(playerselection, computerselection);
+    computerselection = array[Math.floor(Math.random() * array.length)];
 })
 
 const scissorsBtn = document.querySelector('#scissors');
 scissorsBtn.addEventListener('click', function(e) {
     playerselection = 'scissors';
     evaluation(playerselection, computerselection);
+    computerselection = array[Math.floor(Math.random() * array.length)];
 })
 
 
