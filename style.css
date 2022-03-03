@@ -1,0 +1,28 @@
+div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 300vh;
+    gap: 20px;
+}
+
+button {
+    font-size: 35px;
+    border: solid 4px white;
+    color: white;
+    background-color: black;
+    
+}
+
+button:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 20px black;
+    
+}
+
+body {
+    display: flex;
+    background-color: grey;
+}
