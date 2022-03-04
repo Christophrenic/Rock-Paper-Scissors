@@ -1,29 +1,18 @@
-div.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-button {
-    font-size: 35px;
-    border: solid 4px white;
-    color: white;
-    background-color: black;
-    
-}
-
-button:hover {
-    transition: 0.2s;
-    transform: scale(1.05);
-    text-shadow: 1px 1px 20px black;
-    
-}
 
 body {
     display: flex;
-    background-color: grey;
+    background-color: black;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 div.dashboard {
@@ -35,4 +24,23 @@ div.dashboard {
 
 p {
     font-size: 50px;
+    color: whitesmoke
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    border: solid 1px rgb(255, 215, 0);
+    border-radius: 20px;
+    box-shadow: 7px 6px 28px 1px rgb(255, 215, 0);
+}
+
+img:active {
+    transition: 0s;
+    box-shadow: 2px 1px 1px 1px rgb(255, 215, 0);
 }
